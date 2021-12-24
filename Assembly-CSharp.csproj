@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9FC45F78-7F31-D8FA-95DF-44AB31C4564D}</ProjectGuid>
+    <ProjectGuid>{2AC35B6C-2B42-8512-5EDD-B797FE6C62D9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -57,9 +57,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\ChangeScene.cs" />
+    <Compile Include="Assets\Script\Control\PlayerBody.cs" />
     <Compile Include="Assets\Script\Btn_MenuSettings.cs" />
-    <Compile Include="Assets\Script\PlayerHead.cs" />
-    <Compile Include="Assets\Script\PlayerBody.cs" />
+    <Compile Include="Assets\Script\Item\UI_OnOff.cs" />
+    <Compile Include="Assets\Script\Control\PlayerHead.cs" />
+    <Compile Include="Assets\Script\Item\ItemManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
