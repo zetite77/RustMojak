@@ -5,11 +5,11 @@ using UnityEngine;
 public class PlayerBody : MonoBehaviour
 {
     [SerializeField]
-    GameObject playerBody;
+    GameObject m_PlayerBody;
     [SerializeField]
-    Rigidbody rigidBody;
+    Rigidbody m_RigidBody;
     [SerializeField]
-    CapsuleCollider capsuleCollider;
+    CapsuleCollider m_CapsuleCollider;
 
     public float turnSpeed; // 마우스 회전 속도
     public float moveSpeed; // 이동 속도
@@ -17,6 +17,8 @@ public class PlayerBody : MonoBehaviour
     public Vector3 rotForward; // 플레이어가 보는 방향
 
     private bool isGround = true;
+
+    public Animation MeleeAttack;
 
     private void OnCollisionStay(Collision col)
     {
@@ -69,7 +71,7 @@ public class PlayerBody : MonoBehaviour
         {   //점프 키가 눌렸을 때
             if (isGround == true)
             {   //점프 중이지 않을 때
-                rigidBody.AddForce(Vector2.up * jumpForce, ForceMode.Impulse);
+                m_RigidBody.AddForce(Vector2.up * jumpForce, ForceMode.Impulse);
                 isGround = false;
             }
         }
@@ -77,4 +79,5 @@ public class PlayerBody : MonoBehaviour
         // 이동방향 * 속도 * 프레임단위 시간을 곱해서 플레이어의 트랜스폼을 이동
         transform.Translate(dir * moveSpeed * Time.deltaTime);
     }
+    
 }

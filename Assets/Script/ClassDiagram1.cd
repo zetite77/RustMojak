@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PlayerHead">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="PlayerHead.ITEM_KIND" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Script\Control\PlayerHead.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="PlayerHead.Item" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Script\Control\PlayerHead.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AEcoBABACCAAIIAAAACECAABAAAAAAAAAAEABEAAAAA=</HashCode>
+      <FileName>Assets\Script\Control\PlayerHead.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>
