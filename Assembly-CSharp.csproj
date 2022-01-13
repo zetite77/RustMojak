@@ -57,13 +57,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\ChangeScene.cs" />
+    <Compile Include="Assets\Script\Item\ItemManager.cs" />
     <Compile Include="Assets\Script\Control\MeleeAttack.cs" />
     <Compile Include="Assets\Script\Control\PlayerBody.cs" />
     <Compile Include="Assets\Script\Btn_MenuSettings.cs" />
     <Compile Include="Assets\Script\Item\UI_OnOff.cs" />
     <Compile Include="Assets\Script\Control\NumberSlotSwap.cs" />
     <Compile Include="Assets\Script\Control\PlayerHead.cs" />
-    <Compile Include="Assets\Script\Item\ItemManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Script\ClassDiagram1.cd" />
