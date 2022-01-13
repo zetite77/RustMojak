@@ -97,11 +97,9 @@ public class MeleeAttack : MonoBehaviour
         markRotAng += (float)System.Math.PI / 10;
         markPosition.x = (float)System.Math.Sin(markRotAng) * tree.transform.localScale.x * treeRad;
         markPosition.z = -((float)System.Math.Cos(markRotAng)) * tree.transform.localScale.x * treeRad;
-        markRotation.SetEulerAngles(0, -markRotAng, 0);
+        markRotation.SetEulerAngles(0f, -markRotAng, 0f);
         // 로컬포지션은 set이 안되는듯 -> 부모포지션 + 로컬포지션변동
         hitInfo.transform.SetPositionAndRotation(tree.transform.position + markPosition, markRotation);
-
-
 
     }
 }

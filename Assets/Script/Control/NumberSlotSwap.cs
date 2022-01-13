@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class NumberSlotSwap : MonoBehaviour
 {
-    public GameObject handsObj;
+    public GameObject handsObj; // 무기 슬롯 활성화 시 나타나는 3D 오브젝트 (플레이어 오른손과 연결됨)
     enum EQUIP_STATE { HANDS_FREE = -1, SLOT_1, SLOT_2, SLOT_3, SLOT_4, SLOT_5, SLOT_6, POCKET_MAX = 6 };
 
-    public Button[] pocketSlot = new Button[ (int)EQUIP_STATE.POCKET_MAX ];
-    private RawImage rawImage;
-    private EQUIP_STATE preNum = EQUIP_STATE.HANDS_FREE;
+    public Button[] pocketSlot = new Button[ (int)EQUIP_STATE.POCKET_MAX ]; // 인벤토리 하단 슬롯(24칸)
+    private RawImage rawImage; // 슬롯 이미지
+    private EQUIP_STATE preNum = EQUIP_STATE.HANDS_FREE; // 무기 스왑 시 이전 활성화 슬롯
 
     public static bool equipped; // 스왑애니메이션과 연동 (MeleeAttack.cs)
 
@@ -52,7 +52,7 @@ public class NumberSlotSwap : MonoBehaviour
             equipped = false;
         }
         else
-        { // 이전 무장은 비활성화, 스왑한 무장은 활성화
+        { // 이전 무장은 비활성화, 스왑한 무기는 활성화
             handsObj.SetActive(false);
 
             rawImage = pocketSlot[(int)preNum].GetComponentInChildren<RawImage>();

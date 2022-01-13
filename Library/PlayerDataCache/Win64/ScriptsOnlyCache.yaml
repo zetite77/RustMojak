@@ -3,11 +3,22 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Btn_MenuSettings
     - ChangeScene
+    - ItemManager
+    - MeleeAttack
+    - NumberSlotSwap
     - PlayerBody
     - PlayerHead
     - UI_OnOff
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -45,11 +56,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -62,22 +81,34 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2062}
     - Class: 114
-      Script: {instanceID: 2220}
+      Script: {instanceID: 2092}
     - Class: 114
-      Script: {instanceID: 2464}
+      Script: {instanceID: 2222}
     - Class: 114
-      Script: {instanceID: 2720}
+      Script: {instanceID: 2322}
     - Class: 114
-      Script: {instanceID: 2934}
+      Script: {instanceID: 2330}
     - Class: 114
-      Script: {instanceID: 3344}
+      Script: {instanceID: 2468}
     - Class: 114
-      Script: {instanceID: 4076}
+      Script: {instanceID: 2646}
     - Class: 114
-      Script: {instanceID: 4148}
+      Script: {instanceID: 2724}
+    - Class: 114
+      Script: {instanceID: 2938}
+    - Class: 114
+      Script: {instanceID: 3346}
+    - Class: 114
+      Script: {instanceID: 3612}
+    - Class: 114
+      Script: {instanceID: 4080}
+    - Class: 114
+      Script: {instanceID: 4152}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -125,17 +156,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2062}
     - Class: 114
-      Script: {instanceID: 2220}
+      Script: {instanceID: 2222}
     - Class: 114
-      Script: {instanceID: 2320}
+      Script: {instanceID: 2322}
     - Class: 114
-      Script: {instanceID: 2464}
+      Script: {instanceID: 2468}
     - Class: 114
-      Script: {instanceID: 2642}
+      Script: {instanceID: 2646}
     - Class: 114
-      Script: {instanceID: 2720}
+      Script: {instanceID: 2724}
     - Class: 114
-      Script: {instanceID: 3188}
+      Script: {instanceID: 3192}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -257,6 +288,12 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: d1f040604412d41c13359918db814187
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ItemManager
+  - hash:
+      serializedVersion: 2
       Hash: 5f170942ee57c7a568f5bcfc7521adea
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
@@ -279,6 +316,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: EventSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 747ecf7e96e68a1ffbb2c115c740cae8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MeleeAttack
   - hash:
       serializedVersion: 2
       Hash: fe64a45214940b510a0ec79c96d43498
@@ -401,7 +444,7 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
-      Hash: 1b6b22cb7679c31798fabe6d3e4862a1
+      Hash: 85607ad8cddcd666986136bc941435d6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerBody
@@ -503,7 +546,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: e9539b36af987b1fc4d5169f5d2f3d29
+      Hash: 0d53ed47398917021ff4f2012b1347e0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UI_OnOff
@@ -563,6 +606,12 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
+      Hash: 2f00bb93c4ca74aaf80ce970d612a20d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NumberSlotSwap
+  - hash:
+      serializedVersion: 2
       Hash: 6980e81ddc615a861309d2d659cc3760
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -587,7 +636,7 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: 0114d5f9d68dbbe203947557463df516
+      Hash: 62cef9f13a042d4008a8138dfdef088a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerHead
@@ -609,12 +658,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ItemManager
   platform: 19
   scenePathNames:
   - Assets/Scenes/StartScene.unity
