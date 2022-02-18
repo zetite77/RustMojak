@@ -10,6 +10,7 @@ TagManager:
   - Wood
   - Tree
   - TreeMark
+  - Fabric
   layers:
   - Default
   - TransparentFX
